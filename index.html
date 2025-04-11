@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xmusk Pay - Loading</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    .logo {
+      font-size: 48px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      animation: pop 1.2s ease-in-out;
+    }
+
+    @keyframes pop {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">xt.pay</div>
+
+  <script>
+    // Redirect to login.html after 2 seconds
+    setTimeout(function () {
+      window.location.href = "login.html";
+    }, 2000); // 2000 milliseconds = 2 seconds
+  </script>
+</body>
+</html>
